@@ -19,13 +19,60 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
-                  radius: 50.0,
+                  radius: 75.0,
                   backgroundImage: NetworkImage(
                       'https://flash.comiccruncher.com/images/characters/b5b85bda.jpg'),
                 ),
-                SizedBox(
-                  width: double.infinity,
-                )
+                Text(
+                  'Batman',
+                  style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Pacifico',
+                  ),
+                ),
+                Text(
+                  'TECH-BASE SUPERHERO',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20.0,
+                    fontFamily: 'Source Sans Pro',
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    vertical: 10.0,
+                    horizontal: 20.0,
+                  ),
+                  color: Colors.white,
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.phone),
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text('404.123.1234'),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    vertical: 10.0,
+                    horizontal: 20.0,
+                  ),
+                  color: Colors.white,
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.email),
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text('batman@gmail.com'),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

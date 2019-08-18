@@ -39,38 +39,39 @@ class HomePage extends StatelessWidget {
                     fontFamily: 'Source Sans Pro',
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10.0,
-                    horizontal: 20.0,
-                  ),
-                  color: Colors.white,
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(Icons.phone),
-                      SizedBox(
-                        width: 20.0,
-                      ),
-                      Text('404.123.1234'),
-                    ],
+                SizedBox(
+                  height: 20.0,
+                  width: 200.0,
+                  child: Divider(
+                    color: Colors.teal.shade100,
                   ),
                 ),
-                Container(
+                Card(
                   margin: EdgeInsets.symmetric(
                     vertical: 10.0,
                     horizontal: 20.0,
                   ),
                   color: Colors.white,
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(Icons.email),
-                      SizedBox(
-                        width: 20.0,
-                      ),
-                      Text('batman@gmail.com'),
-                    ],
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal[700],
+                    ),
+                    title: Text('404.123.1234'),
+                  ),
+                ),
+                Card(
+                  margin: EdgeInsets.symmetric(
+                    vertical: 10.0,
+                    horizontal: 20.0,
+                  ),
+                  color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal[700],
+                    ),
+                    title: Text('batman@gmail.com'),
                   ),
                 ),
               ],
